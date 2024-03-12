@@ -17,3 +17,21 @@ print(result)
 lst = result.split()
 print(lst)
 print(":)".join(lst))
+
+#정규표현식
+import re
+
+result = re.search("[0-9]*th","  35th")
+print(result)
+print(result.group())
+#주석처리 : ctrl + /
+# result = re.match("[0-9]*th","  35th")
+# print(result)
+# print(result.group())
+
+result  = re.search("apple", "this is apple")
+print(result.group())
+result  = re.search("\d{4}", "올해는 2024년")
+print(result.group())
+result  = re.search("\d{5}", "우편번호는 51222 2109 2503")
+print(result.group())
