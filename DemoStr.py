@@ -7,4 +7,4 @@ strB = "파이썬은 매우 강력해"
 
 print(len(strA))
 print(len(strB))
-print(strA.capitalize)
+print(strA.capitalize())
