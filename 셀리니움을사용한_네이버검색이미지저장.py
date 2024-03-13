@@ -18,12 +18,14 @@ input_name = input("검색할 동물이름:")
 driver = wb.Chrome()
 driver.get(f"https://search.naver.com/search.naver?where=image&sm=tab_jum&query={input_name}")
 #약간의 대기 시간 주기 
-time.sleep(2) 
+time.sleep(3) 
 for i in range(2) : 
     driver.find_element(By.CSS_SELECTOR, "body").send_keys(Keys.END)
-    time.sleep(2) 
+    time.sleep(3) 
 print("스크롤 다운 완료")
 img = driver.find_elements(By.CSS_SELECTOR, "._fe_image_tab_content_thumbnail_image") 
+
+# <img src="https://search.pstatic.net" class="_fe_image_tab_content_thumbnail_image" alt="강아지에게 시금치 좋은 음식 일까, 주의 사항은 없을까" data-image-width="196" data-image-height="196" style="width: 208px; height: 208px;" data-image-viewer-trigger="" data-image-viewer-img-id="image_sas:blog_a3e7ac50dcfc871f246c58b0db7bf9fa">
 
 #이미지의 src속성값 가져오기 
 src = [i.get_attribute('src') for i in img] 
