@@ -42,8 +42,7 @@ class Form(QMainWindow):
         for n in range(0,5):
             #클리앙의 중고장터 주소 
             data ='https://www.clien.net/service/board/sold?&od=T31&po=' + str(n)
-            req = urllib.request.Request(data, 
-                headers = hdr)
+            req = urllib.request.Request(data, headers = hdr)
             data = urllib.request.urlopen(req).read()
             page = data.decode('utf-8', 'ignore')
             soup = BeautifulSoup(page, 'html.parser')
