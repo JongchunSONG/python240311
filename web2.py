@@ -1,6 +1,6 @@
 # web2.py
 #웹서버와 통신(요청)
-import urllib.request
+
 
 #크롤링
 from bs4 import BeautifulSoup
