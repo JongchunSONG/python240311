@@ -39,7 +39,7 @@ class Form(QMainWindow):
         row = 0
         #User-Agent를 조작하는 경우 
         hdr = {'User-agent':'Mozila/5.0 (compatible; MSIE 5.5; Windows NT)'}
-        for n in range(0,5):
+        for n in range(0,10):
             #클리앙의 중고장터 주소 
             data ='https://www.clien.net/service/board/sold?&od=T31&po=' + str(n)
             req = urllib.request.Request(data, headers = hdr)

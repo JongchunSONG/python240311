@@ -6,7 +6,7 @@ import re
 #User-Agent를 조작하는 경우(아이폰에서 사용하는 사파리 브라우져의 헤더) 
 hdr = {'User-agent':'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/603.1.23 (KHTML, like Gecko) Version/10.0 Mobile/14E5239e Safari/602.1'}
 
-for n in range(1,3): #페이지 번호에 따라 0 또는 1로 시작
+for n in range(1,10): #페이지 번호에 따라 0 또는 1로 시작
         #오늘의 유머 베스트오브베스트 게시판 
         data ='https://www.todayhumor.co.kr/board/list.php?table=bestofbest&page=' + str(n)
         print(data)
