@@ -1,0 +1,36 @@
+## 11.2 `.gitignore` 추가
+
+Python 저장소에서는 불필요한 파일이 GitHub에 올라가지 않도록 `.gitignore`를 두는 것이 좋습니다.
+
+예:
+
+```gitignore
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Build files
+build/
+dist/
+*.spec
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Secret files
+.env
+*.key
+*.pem
